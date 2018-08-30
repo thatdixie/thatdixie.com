@@ -1,0 +1,117 @@
+<?php
+require_once "DixieDB.php";
+require      "Contact.php";
+
+/********************************************************************
+ * ContactModel inherits DixieDB and provides functions to
+ * map Contact class to dixieDB.
+ *
+ * @author  megan
+ * @version 180614
+ *********************************************************************
+ */
+class ContactModel extends DixieDB
+{
+    /*********************************************************
+     * Returns a Contact by contactId
+     *
+     * @return contact
+     *********************************************************
+     */
+    public function find($id)
+    {
+        $query="SELECT contactId,".
+                      "contactName,".
+                      "contactEmail,".
+                      "contactPhone,".
+                      "contactSubject,".
+                      "contactMessage,".
+                      "contactSource,".
+                      "contactCreated,".
+                      "contactModified,".
+                      "contactStatus ".                      		               
+	       "FROM contact ".
+	       "WHERE contactId=".$id;
+
+        return($this->selectDB($query, "Contact"));
+    }
+
+    /*********************************************************
+     * Insert a new Contact into dixieDB database
+     *
+     * @param $contact
+     * @return n/a
+     *********************************************************
+     */
+    public function insert($contact)
+    {
+        $query="INSERT INTO contact ( ".
+	              "contactId,".
+                      "contactName,".
+                      "contactEmail,".
+                      "contactPhone,".
+                      "contactSubject,".
+                      "contactMessage,".
+                      "contactSource,".
+                      "contactCreated,".
+                      "contactModified,".
+                      "contactStatus ".                      
+                           ")".
+               "VALUES (".
+                      "null,".
+                      "'".$contact->contactName."',".
+                      "'".$contact->contactEmail."',".
+                      "'".$contact->contactPhone."',".
+                      "'".$contact->contactSubject."',".
+                      "'".$contact->contactMessage."',".
+                      "'".$contact->contactSource."',".
+                      "'".$contact->contactCreated."',".
+                      "'".$contact->contactModified."',".
+                      "'".$contact->contactStatus."' ".                      
+                     "')"; 
+
+        $this->executeQuery($query);
+    }
+
+    /*********************************************************
+     * Update a Contact in dixieDB database
+     *
+     * @param $contact
+     * @return n/a
+     *********************************************************
+     */
+    public function update($contact)
+    {
+        $query="UPDATE  contact ".
+	          "SET ".
+                      "contactId= ".$contact->contactId." ,".
+                      "contactName='".$contact->contactName."',".
+                      "contactEmail='".$contact->contactEmail."',".
+                      "contactPhone='".$contact->contactPhone."',".
+                      "contactSubject='".$contact->contactSubject."',".
+                      "contactMessage='".$contact->contactMessage."',".
+                      "contactSource='".$contact->contactSource."',".
+                      "contactCreated='".$contact->contactCreated."',".
+                      "contactModified='".$contact->contactModified."',".
+                      "contactStatus='".$contact->contactStatus."' ".                      
+	       "WHERE contactId=".$contact->contactId;
+
+        $this->executeQuery($query);
+    }
+
+    /*********************************************************
+     * Delete a Contact by contactId
+     *
+     * @param  $id
+     * @return n/a
+     *********************************************************
+     */
+    public function delete($id)
+    {
+        $query="DELETE FROM contact WHERE contactId=".$id;
+
+        $this->executeQuery($query);
+    }
+}
+
+?>

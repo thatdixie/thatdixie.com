@@ -1,0 +1,79 @@
+#!/usr/bin/php
+<?php
+
+require "ContactModel.php";
+
+$json = <<<EOF
+{
+    "response" :
+    {
+	"contactId":       0,
+        "contactName":    "John Doe Tester",
+        "contactEmail":   "JohnDoeTester@test.com",
+        "contactPhone":   "111-111-1111",
+        "contactSubject": "JohnDoe Subject",
+        "contactMessage": "JohnDoe Message",
+        "contactCreated": "now()",
+        "contactModified":"now()", 
+        "contactSource":  "test",
+        "contactStatus":  "testing"
+    }
+}
+EOF;
+
+$db      = new ContactModel();
+
+$contact = new Contact($json);
+$contact->contactCreated  = date("Y-m-d H:i:s");
+$contact->contactModified = date("Y-m-d H:i:s");
+
+$db->insert($contact); 
+//$r = $db->find(1);
+//printResultSet($r);
+
+
+//----------------------------------
+// print result set...
+//----------------------------------
+function printResultSet($results)
+{
+    foreach($results as $contact)
+    {
+    echo "contactId:      ".$contact->contactId."\n";
+    echo "contactName:    ".$contact->contactName."\n";
+    echo "contactEmail:   ".$contact->contactEmail."\n";
+    echo "contactPhone:   ".$contact->contactPhone."\n";
+    echo "contactSubject: ".$contact->contactSubject."\n";
+    echo "contactMessage: ".$contact->contactMessage."\n";
+    echo "contactCreated: ".$contact->contactCreated."\n";
+    echo "contactModified:".$contact->contactModified."\n";
+    echo "contactSource:  ".$contact->contactSource."\n";
+    echo "contactStatus:  ".$contact->contactStatus."\n";
+    echo "\n";
+    echo $contact->makeJSON();
+    echo "\n";
+    }
+}
+
+//----------------------------------
+// returns a select string...
+//----------------------------------
+function selectString()
+{
+
+$query="SELECT contactId,".
+              "contactName,".
+	      "contactEmail,".
+	      "contactPhone,".
+	      "contactSubject,".
+	      "contactMessage,".
+	      "contactCreated,".
+	      "contactModified,".
+	      "contactSource,".
+	      "contactStatus ".
+	"FROM contact";
+
+return($query);
+}
+
+?>

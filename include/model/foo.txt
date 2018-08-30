@@ -1,0 +1,1 @@
+INSERT INTO contact ( contactId,contactName,contactEmail,contactPhone,contactSubject,contactMessage,contactSource,contactCreated,contactModified,contactStatus )VALUES (null,'John Doe','johnDoe@email.com','5555555555','july 15','blah','thatdixie.com','2018-06-15 16:07:30','2018-06-15 16:07:30','UNREAD' ') 
