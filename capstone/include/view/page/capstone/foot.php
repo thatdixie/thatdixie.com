@@ -22,7 +22,7 @@ function foot()
               <div class="social">
                 <ul class="social-share">
                   <li><a href="https://www.facebook.com/profile.php?id=100005161504879"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="http://instagram.com/cyrusface"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://instagram.com/cyrusface"><i class="fa fa-instagram"></i></a></li>
                   <li><a href="https://www.linkedin.com/in/megan-williams-58755935"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
               </div>
@@ -30,18 +30,15 @@ function foot()
           </div>
         </div>
       </div>
-    </footer><!--/#footer-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.js"></script>
-    <!-- load CGIDiaper content managed html here -->
-    <script src="js/dixie.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/main.js"></script>
+    </footer>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.prettyPhoto.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/dixie2.js"></script>
   </body>
 </html>
 <?php

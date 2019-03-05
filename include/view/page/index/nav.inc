@@ -28,7 +28,8 @@ function nav()
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About That Dixie</a></li>
-                <li><a href="/admin/">Programing Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#portfolio">Programing Projects</a></li>
                 <li><a href="#features">Fun</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
