@@ -28,7 +28,7 @@ function nav()
                 <li><a target="capstone" href="/capstone/HunterCapstoneWhitePaper.pdf">White Paper</a></li>
                 <li><a target="capstone" href="/capstone/capstoneER.pdf">ER Diagram</a></li>
                 <li><a target="capstone" href="/capstone/jukeboxDB_Model.png">Object Model</a></li>
-                <li><a target="capstone" href="https://github.com/thatdixie">Git</a></li>
+                <li><a target="capstone" href="https://github.com/thatdixie/thepeoplesjukebox">Git</a></li>
               </ul>
             </div>
           </div>
