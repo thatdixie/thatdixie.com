@@ -8,13 +8,14 @@
 function projects()
 {
 ?>
-    <section id="portfolio">
+    <section id="projectshit">
+      <p><br><br><br><br></p>
       <div class="container">
         <div class="center">
           <div class="col-md-6 col-md-offset-3">
             <h2>Programming Projects</h2>
             <hr>
-            <p class="lead"><a href="/admin/">Login to admin site</a></p>
+            <div id="projects"></div>
           </div>
         </div>
       </div>

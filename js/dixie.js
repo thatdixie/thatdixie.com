@@ -1,18 +1,27 @@
 $(function(){
+    $("#bigpic").load("cmsdata/bigpic.html");
+});
+
+$(function(){
     $("#aboutthatdixie").load("cmsdata/about.html");
 });
 
 $(function(){
-    $("#bigpic").load("cmsdata/bigpic.html");
+    $("#projects").load("cmsdata/projects.html");
+});
+
+$(function(){
+    $("#fun").load("cmsdata/fun.html");
+});
+
+$(function(){
+    $("#contacthead").load("cmsdata/contacthead.html");
 });
 
 $(function(){
     $("#copyrightyear").load("cmsdata/copyyear.html");
 });
 
-$(function(){
-    $("#contacthead").load("cmsdata/contacthead.html");
-});
 
 
 //------------------------------------

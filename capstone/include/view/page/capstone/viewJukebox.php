@@ -129,6 +129,3 @@ function viewJukebox($profile, $media)
 }
 
 ?>
-
-
-

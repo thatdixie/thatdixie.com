@@ -5,7 +5,7 @@
  * @author megan
  *********************************
 */
-function nav()
+function navPdfViewer()
 {
 ?>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -17,21 +17,15 @@ function nav()
             </div>
           </div>
           <div class="col-md-10">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                 <i class="fa fa-bars"></i>
               </button>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="menu">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About That Dixie</a></li>
-                <li><a href="/capstone/DixieResume.pdf">Resume</a></li>
-                <li><a href="#projectshit">Programing Projects</a></li>
-                <li><a href="#funshit">Fun</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/#projectshit">Programing Projects</a></li>
+                <li><a target="capstone" href="https://github.com/thatdixie/thatdixieCGI/blob/master/admin/pdfviewer.cpp">Source Code on Git</a></li>
               </ul>
             </div>
           </div>

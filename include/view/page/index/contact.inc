@@ -9,6 +9,7 @@ function contact()
 {
 ?>
     <section id="contact">
+      <p><br><br><br><br></p>
       <div class="contact-page">
         <div class="container">
           <div class="center">

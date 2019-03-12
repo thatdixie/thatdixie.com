@@ -24,7 +24,7 @@ function nav()
             </div>
             <div class="collapse navbar-collapse" id="menu">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="/#portfolio">Programing Projects</a></li>
+                <li><a href="/#projectshit">Programing Projects</a></li>
                 <li><a target="capstone" href="/capstone/HunterCapstoneWhitePaper.pdf">White Paper</a></li>
                 <li><a target="capstone" href="/capstone/capstoneER.pdf">ER Diagram</a></li>
                 <li><a target="capstone" href="/capstone/jukeboxDB_Model.png">Object Model</a></li>
