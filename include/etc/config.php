@@ -12,10 +12,23 @@ function systemEmail()
     return($admins);
 }
 
+//---------------------------------------
+// This is the TPJ address...
+// which we may need for capstone demos
+//---------------------------------------
 function pubServerAddress()
 {
     return("http://thepeoplesjukebox.com");
     //return("http://temp.metaq");
+}
+
+//---------------------------------------
+// This is OUR address (thatdixie)...
+//---------------------------------------
+function serverAddress()
+{
+    //return("http://thatdixie.com");
+    return("http://thatdixiebitch");
 }
 
 function smtpConfig()
