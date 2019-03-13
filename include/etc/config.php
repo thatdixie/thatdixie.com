@@ -27,8 +27,8 @@ function pubServerAddress()
 //---------------------------------------
 function serverAddress()
 {
-    //return("http://thatdixie.com");
-    return("http://thatdixiebitch");
+    return("http://thatdixie.com");
+    //return("http://thatdixiebitch");
 }
 
 function smtpConfig()
