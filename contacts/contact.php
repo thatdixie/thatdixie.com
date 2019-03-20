@@ -1,6 +1,7 @@
 <?php
 
 require_once "../include/etc/session.php";
+require_once "../include/etc/email/email.php";
 siteSession();
 
 if(isCaptchaOK())
@@ -28,6 +29,8 @@ if(isCaptchaOK())
     $db = new ContactModel();
     $db->insert($contact);
 
+    dixieNotify($contact);
+    
     kissyFace("Thank You!", "/");  
 }
 else
@@ -48,6 +51,26 @@ else
     // This is the captcha page...
     //--------------------------------
     redirect("/captcha/getcaptcha.php"); 
+}
+
+function dixieNotify($contact)
+{
+    $senderAdmin = "cyrusface@gmail.com";
+    error_log($senderAdmin." sent\n", 0);
+    $email = new Email();
+    $email->senderName   = "thatdixie.com";
+    $email->toEmail      = $senderAdmin;
+    $email->toName       = "Megan Williams";
+    $email->subject      = $contact->contactName." posted up.";
+    $email->body         = "Name: ".$contact->contactName."<br>".
+                           "Email: ".$contact->contactEmail."<br>".
+                           "Phone: ".$contact->contactPhone."<br>".
+                           "Company: ".$contact->contactCompany."<br>".
+                           "Subject: ".$contact->contactSubject."<br>".
+                           "<br>".
+                           "Message: ".$contact->contactMessage;
+    
+    $email->send();
 }
 ?>
 

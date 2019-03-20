@@ -48,7 +48,7 @@ function systemNotify($message)
         $email->senderName   = "ThePeoplesJukebox.com";
         $email->toEmail      = $senderAdmin;
         $email->toName       = "Sys Admin";
-        $email->subject      = $message;
+        $email->subject      = $contact->contactSubject;
         $email->body         = viewSystemEventEmail($textBody);
     
         $email->send();
