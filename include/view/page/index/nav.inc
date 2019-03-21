@@ -26,12 +26,24 @@ function nav()
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="menu">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About That Dixie</a></li>
-                <li><a href="/capstone/DixieResume.pdf">Resume</a></li>
-                <li><a href="#projectshit">Programing Projects</a></li>
-                <li><a href="#funshit">Fun</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                  <a href="#home" data-toggle="collapse" data-target=".navbar-collapse.in">Home</a>
+                </li>
+                <li>
+                  <a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About That Dixie</a>
+                </li>
+                <li>
+                  <a href="/capstone/DixieResume.pdf" data-toggle="collapse" data-target=".navbar-collapse.in">Resume</a>
+                </li>
+                <li>
+                  <a href="#projectshit" data-toggle="collapse" data-target=".navbar-collapse.in">Programing Projects</a>
+                </li>
+                <li>
+                  <a href="#funshit" data-toggle="collapse" data-target=".navbar-collapse.in">Fun</a>
+                </li>
+                <li>
+                  <a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a>
+                </li>
               </ul>
             </div>
           </div>

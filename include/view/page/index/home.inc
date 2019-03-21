@@ -9,7 +9,8 @@ function home()
 {
 ?>
     <div id="home">
-      <br><br><br><br><br>
+      <p><br><br><br></p>
+      <p><br><br></p>
       <center><div id="bigpic"></div></center>
     </div>
 <?php

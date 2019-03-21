@@ -17,10 +17,9 @@ function viewThatDixie()
         <div class="col-md-6 col-md-offset-3">
           <h2>What's in ThatDixie.com ?</h2>
           <hr>
-          <p>
             The following technologies and design patterns are used on this website:
              <ul>
-               <li><a target="capstone" href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)"</a>Linux, Apache, MySQL, PHP</a> (LAMP)</li>
+               <li><a target="capstone" href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">Linux, Apache, MySQL, PHP</a> (LAMP)</li>
                <li><a target="capstone" href="https://getbootstrap.com/">Bootstrap</a> component library</li>
                <li><a target="capstone" href="https://jquery.com/">jQuery</a> JavaScript library</li>
                <li><a target="capstone" href="http://entityobjects.com">EntityObjects.com</a> Object Relational Mapping Tool (ORM</li>
@@ -29,8 +28,6 @@ function viewThatDixie()
                <li><a target="capstone" href="https://github.com/thatdixie/libdixie">My C++ Library</a> and CGI's using</li>
                <li><a target="capstone" href="https://github.com/thatdixie/libdixie/tree/master/cgidiaper">CGIDiaper</a></li>
              </ul>
-  
-          </p>
         </div>
       </div>
     </div>
