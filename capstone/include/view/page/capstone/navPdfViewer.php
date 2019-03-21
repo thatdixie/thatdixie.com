@@ -24,8 +24,12 @@ function navPdfViewer()
             </div>
             <div class="collapse navbar-collapse" id="menu">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="/#projectshit">Programing Projects</a></li>
-                <li><a target="capstone" href="https://github.com/thatdixie/thatdixieCGI/blob/master/admin/pdfviewer.cpp">Source Code on Git</a></li>
+                <li>
+                  <a href="/#projectshit" data-toggle="collapse" data-target=".navbar-collapse.in">Programing Projects</a>
+                </li>
+                <li>
+                  <a target="capstone" href="https://github.com/thatdixie/thatdixieCGI/blob/master/admin/pdfviewer.cpp" data-toggle="collapse" data-target=".navbar-collapse.in">Source Code on Git</a>
+                </li>
               </ul>
             </div>
           </div>
