@@ -34,7 +34,7 @@ function nav()
       </div>
     </nav>
     <p></p>
-    <br><br<br><br>
+    <br><br><br><br>
 <?php
 }
 ?>

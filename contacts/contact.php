@@ -29,8 +29,16 @@ if(isCaptchaOK())
     $db = new ContactModel();
     $db->insert($contact);
 
+    //---------------------------------
+    // notify system administrators
+    //---------------------------------
     dixieNotify($contact);
-    
+
+    //---------------------------------
+    // send Thank you message and
+    // redirect to user home page
+    //---------------------------------
+    setCaptchaNOTOK();
     kissyFace("Thank You!", "/");  
 }
 else
