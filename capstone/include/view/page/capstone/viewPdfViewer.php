@@ -29,7 +29,7 @@ function viewPdfViewer()
           <p>
             <h2>
             <a target="capstone" href="/admin/pdfviewer.cgi?doc=The_C__Programming_Language__Stroustrup_.pdf">
-              The C Programming Language
+              The C++ Programming Language
             </a>
             </h2>
           </p>
