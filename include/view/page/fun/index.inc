@@ -10,6 +10,7 @@
 require_once "head.inc";
 require_once "nav.inc";
 require_once "cgigoo.inc";
+require_once "ipstack.inc";
 require_once "foot.inc";
 
 ?>
