@@ -9,11 +9,13 @@ function ipstack()
 {
     //-----------------------------------------------
     // REST API call to ipstack.com using
-    // access key....$userInfo has resulting object
+    // access key and users IP address
+    // $userInfo has resulting object
     //-----------------------------------------------
     $restUrl   ="http://api.ipstack.com/";
     $accessKey ="8ea7d0e7cbd5c95cdb983b6df5f00664";
-    $userInfo  = json_decode(file_get_contents($restUrl."/check?access_key=".$accessKey ), TRUE);    
+    $userIp    = getRemoteAddr();
+    $userInfo  = json_decode(file_get_contents($restUrl."/".$userIp."?access_key=".$accessKey ), TRUE);    
 ?>
     <div id="home">
       <p><br><br><br><br></p>
