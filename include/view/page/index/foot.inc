@@ -19,7 +19,7 @@ function foot()
             <script type="text/javascript">
               document.write(new Date().getFullYear());
             </script>
-	    thatdixie.com
+	    Megan Williams
           </div>
           <div class="top-bar"> 
             <div class="col-lg-12">
