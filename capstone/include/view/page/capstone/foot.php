@@ -15,7 +15,12 @@ function foot()
             <div class="text-center">
               <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
             </div>
-            <div id="copyrightyear"></div>
+            <!-- <div id="copyrightyear"></div> -->
+	    &copy
+	    <script type="text/javascript">
+	      document.write(new Date().getFullYear());
+	    </script>
+	    Megan Williams
           </div>
           <div class="top-bar"> 
             <div class="col-lg-12">

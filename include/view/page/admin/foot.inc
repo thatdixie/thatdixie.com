@@ -17,7 +17,12 @@ function foot()
 	      <i class="fa fa-angle-up fa-3x"></i>
 	    </a>
 	  </div>
-          Copyright &copy; 2018 Megan Williams
+          <!-- <div id="copyrightyear"></div> -->
+	  &copy
+	  <script type="text/javascript">
+	    document.write(new Date().getFullYear());
+	  </script>
+	  Megan Williams
         </div>
         <div class="top-bar">			
           <div class="col-lg-12">

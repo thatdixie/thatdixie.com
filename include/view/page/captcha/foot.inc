@@ -12,7 +12,11 @@ function foot()
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          &copy; 2018 Megan Williams
+        &copy
+	<script type="text/javascript">
+	  document.write(new Date().getFullYear());
+	</script
+	Megan Williams
         </div>
         <div class="top-bar">			
           <div class="col-lg-12">
