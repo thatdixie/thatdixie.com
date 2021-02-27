@@ -13,7 +13,7 @@ function nav()
         <div class="row">
           <div class="col-md-2">
             <div class="site-logo">
-              <a href="/" class="brand">ThatDixie.com</a>
+              <a href="/" class="brand">Megan Williams</a>
             </div>
           </div>
           <div class="col-md-10">

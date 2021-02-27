@@ -30,7 +30,7 @@ function nav()
                   <a href="/#home" data-toggle="collapse" data-target=".navbar-collapse.in">Home</a>
                 </li>
                 <li>
-                  <a href="/#about" data-toggle="collapse" data-target=".navbar-collapse.in">About That Dixie</a>
+                  <a href="/#about" data-toggle="collapse" data-target=".navbar-collapse.in">Megan Williams</a>
                 </li>
                 <li>
                   <a href="/capstone/DixieResume.pdf" data-toggle="collapse" data-target=".navbar-collapse.in">Resume</a>
