@@ -13,7 +13,7 @@ function about()
       <div class="container">
         <div class="center">
           <div class="col-md-6 col-md-offset-3">
-            <h2>About That Dixie</h2>
+            <h2>Megan Williams</h2>
             <hr>
             <div id="aboutthatdixie"></div>
           </div>
